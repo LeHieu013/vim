@@ -19,7 +19,7 @@ Plugin 'tpope/vim-fugitive'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
-Plugin 'file:///home/gmarik/path/to/plugin'
+" Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -54,7 +54,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 "
-set nu
+set rnu
 syntax on
 set tabstop=4
 set shiftwidth=4
