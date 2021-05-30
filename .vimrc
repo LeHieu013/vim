@@ -30,14 +30,15 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-commentary'
-Plugin 'sbdchd/neoformat'
-Plugin 'junegunn/fzf'
+"Plugin 'sbdchd/neoformat'
+"Plugin 'junegunn/fzf'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'ervandew/supertab'
+"Plugin 'ervandew/supertab'
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/html5.vim'
-Plugin 'dsawardekar/wordpress.vim'
-Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ajh17/vimcompletesme'
+Plugin 'Chiel92/vim-autoformat'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -59,3 +60,7 @@ syntax on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+let mapleader = ""
+let g:ctrlp_use_caching = 0
+
