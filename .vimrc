@@ -33,12 +33,13 @@ Plugin 'tpope/vim-commentary'
 "Plugin 'sbdchd/neoformat'
 "Plugin 'junegunn/fzf'
 Plugin 'jiangmiao/auto-pairs'
-"Plugin 'ervandew/supertab'
+Plugin 'ervandew/supertab'
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/html5.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'ajh17/vimcompletesme'
+" Plugin 'ajh17/vimcompletesme'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'prabirshrestha/asyncomplete.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -64,3 +65,8 @@ set expandtab
 let mapleader = ""
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_use_caching = 0
+
+" For autocomplete
+inoremap <C-Space> <C-x><C-o>
+inoremap <C-@> <c-x><c-o>
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
